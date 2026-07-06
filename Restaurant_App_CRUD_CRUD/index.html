@@ -9,8 +9,10 @@
 </head>
 
 <body>
+
     <form onsubmit="handleFormSubmit(event)">
-        <h1>Order Booking</h1>
+        <h1>🍽️ Order Booking</h1>
+
         <label>
             Table :
             <select name="tableDD" id="tableDD" required>
@@ -19,7 +21,7 @@
                 <option value="Table 3">Table 3</option>
             </select>
         </label>
-        <br>
+
         <label>
             Item :
             <select name="itemDD" id="itemDD" required>
@@ -30,22 +32,40 @@
                 <option value="Chapati">Chapati</option>
             </select>
         </label>
-        <br>
+
         <label>
             Price :
             <input type="number" name="price" id="price" required disabled>
         </label>
-        <br>
+
         <input type="submit" value="Place Order">
     </form>
-    <h3>Table 1</h3>
-    <ul id="table1"></ul>
-    <h3>Table 2</h3>
-    <ul id="table2"></ul>
-    <h3>Table 3</h3>
-    <ul id="table3"></ul>
+
+
+    <div class="tables">
+
+        <div class="card">
+            <h3>🍴 Table 1</h3>
+            <ul id="table1"></ul>
+        </div>
+
+        <div class="card">
+            <h3>🍴 Table 2</h3>
+            <ul id="table2"></ul>
+        </div>
+
+        <div class="card">
+            <h3>🍴 Table 3</h3>
+            <ul id="table3"></ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+
 <script src="index.js"></script>
 
 </html>
